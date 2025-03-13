@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
         id: 1,
         name: 'John Doe',
         email: 'john.doe@example.com',
-        message: 'Hello, this is some dummy data!'
+        message: 'Hello, this is some dummy data!!'
     };
 
     res.json(dummyData);
