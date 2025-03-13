@@ -1,23 +1,19 @@
 const express = require('express');
-const cors = require("cors");
+const cors = require('cors');
 
 const app = express();
-const port = 3001;
-
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    const dummyData = {
-        id: 1,
-        name: 'John Doe',
-        email: 'john.doe@example.com',
-        message: 'Hello, this is some dummy data!!!'
-    };
 
-    res.json(dummyData);
+const PORT = process.env.PORT || 8080;
+
+
+app.get('/', (req, res) => {
+  res.send('Hello from App Insights Playground!');
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-})
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
