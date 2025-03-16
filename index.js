@@ -71,7 +71,7 @@ app.get('/', async (req, res) => {
     name: "home-page-request", 
     properties: { customProperty: "custom-value" }
   });
-  res.send('Hello from App Insights Playground!');
+  res.send('Hello from App Insights Playground!!');
 });
 
 // Data API route
